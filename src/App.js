@@ -1,6 +1,7 @@
-import { Route, Routes,Navigate } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 import Navigation from './components/Navigation/Navigation';
+import Home from './pages/HomePage/Home';
 import Start from './pages/StartPage/Start';
 
 function App() {
@@ -15,8 +16,11 @@ function App() {
                path="/home"
                element={<Navigation />}
             >
-               {/* <Route index element={<Home />} />
-          <Route path="favorite" element={<Favorite />} />
+               <Route
+                  index
+                  element={<Home />}
+               />
+               {/* <Route path="favorite" element={<Favorite />} />
           <Route path="list" element={<MyList />} /> */}
             </Route>
             <Route
