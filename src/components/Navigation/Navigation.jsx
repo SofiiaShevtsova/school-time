@@ -27,7 +27,7 @@ const Navigation = () => {
       <>
          <Disclosure
             as="nav"
-            className="bg-gray-800"
+            className="bg-gray-600"
          >
             {({ open }) => (
                <>
@@ -177,8 +177,8 @@ const Navigation = () => {
                         {navigation.map((item) => (
                            <Disclosure.Button
                               key={item.name}
-                              as="a"
-                              href={item.href}
+                              as={Link}
+                              to={item.url}
                               className={classNames(
                                  item.current
                                     ? 'bg-gray-900 text-white'
