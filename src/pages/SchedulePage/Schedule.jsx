@@ -1,5 +1,5 @@
 const Schedule = () => {
-    return (<></>)
+    return (<>Графік занять чи розклад уроків</>)
 }
 
 export default Schedule

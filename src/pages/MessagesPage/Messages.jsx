@@ -1,5 +1,5 @@
 const Messages = () => {
-    return(<></>)
+    return(<>повідомлення</>)
 }
 
 export default Messages

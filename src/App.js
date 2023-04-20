@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 
+import Add from './pages/AddPage/Add';
 import Event from './pages/EventPage/Event';
 import Home from './pages/HomePage/Home';
 import Messages from './pages/MessagesPage/Messages';
@@ -39,6 +40,10 @@ function App() {
                <Route
                   path="statistics"
                   element={<Statistics />}
+               />
+               <Route
+                  path="add"
+                  element={<Add />}
                />
             </Route>
             <Route
