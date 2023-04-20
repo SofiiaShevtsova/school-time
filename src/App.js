@@ -8,6 +8,7 @@ import Points from './pages/PointsPage/Points';
 import Schedule from './pages/SchedulePage/Schedule';
 import Start from './pages/StartPage/Start';
 import Statistics from './pages/StatisticsPage/Statistics';
+import Navigation from './components/Navigation/Navigation';
 
 function App() {
    return (
@@ -19,8 +20,12 @@ function App() {
             />
             <Route
                path="/:userType"
-               element={<Home />}
-            >
+               element={<Navigation />}
+         >
+                          <Route
+                  index
+                  element={<Home />}
+               />
                <Route
                   path="event"
                   element={<Event />}
