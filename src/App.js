@@ -1,8 +1,12 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 
-import Navigation from './components/Navigation/Navigation';
+import Event from './pages/EventPage/Event';
 import Home from './pages/HomePage/Home';
+import Messages from './pages/MessagesPage/Messages';
+import Points from './pages/PointsPage/Points';
+import Schedule from './pages/SchedulePage/Schedule';
 import Start from './pages/StartPage/Start';
+import Statistics from './pages/StatisticsPage/Statistics';
 
 function App() {
    return (
@@ -13,15 +17,29 @@ function App() {
                element={<Start />}
             />
             <Route
-               path="/home"
-               element={<Navigation />}
+               path="/:userType"
+               element={<Home />}
             >
                <Route
-                  index
-                  element={<Home />}
+                  path="event"
+                  element={<Event />}
                />
-               {/* <Route path="favorite" element={<Favorite />} />
-          <Route path="list" element={<MyList />} /> */}
+               <Route
+                  path="messages"
+                  element={<Messages />}
+               />
+               <Route
+                  path="points"
+                  element={<Points />}
+               />
+               <Route
+                  path="schedule"
+                  element={<Schedule />}
+               />
+               <Route
+                  path="statistics"
+                  element={<Statistics />}
+               />
             </Route>
             <Route
                path="*"
