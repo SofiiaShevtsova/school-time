@@ -5,7 +5,7 @@ const Navigation = () => {
    const user = 'admin';
    return (
       <>
-         <nav>
+         <nav class="flex justify-center bg-gray-50 py-6 gap-20 text-red-500">
             <Link to={`/${user}`}>Home</Link>
             <Link to="event">Event</Link>
             <Link to="points">Points</Link>
