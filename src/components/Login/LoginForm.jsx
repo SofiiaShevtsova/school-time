@@ -1,4 +1,6 @@
-// import { useDispatch } from 'react-redux';
+// ------------------for api delete in prodaction----------------------------
+import axios from 'axios';
+// --------------------------------------------------------------------------
 import {
    ErrorMessage,
    Field,
@@ -6,7 +8,9 @@ import {
    Formik,
 } from 'formik';
 // import { logInUser } from 'redux/operationPhonebook';
+// import { useDispatch } from 'react-redux';
 import * as Yup from 'yup';
+
 
 const SignupSchema = Yup.object().shape({
    login: Yup.string()
@@ -37,8 +41,21 @@ const Login = () => {
                      password: '',
                   }}
                   validationSchema={SignupSchema}
-                  onSubmit={(values, actions) => {
-                     console.log(values);
+                  onSubmit={async (
+                     values,
+                     actions,
+                  ) => {
+                     const user =
+                        await axios.post(
+                           'http://localhost:3000/api/users/login',
+                           {
+                              nickName:
+                                 values.login.trim(),
+                              password:
+                                 values.password.trim(),
+                           },
+                        );
+                     console.log(user.data);
                      // const user = {
                      //    email: values.email.trim(),
                      //    password: values.password.trim(),
