@@ -57,7 +57,7 @@ const Add = () => {
                      }
                      className={
                         activeTab === value
-                           ? 'bg-gray-700 text-white cursor-pointer'
+                           ? 'cursor-pointer'
                            : 'text-gray-700 hover:bg-gray-700 hover:text-white cursor-pointer'
                      }
                   >

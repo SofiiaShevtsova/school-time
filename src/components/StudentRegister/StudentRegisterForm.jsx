@@ -46,7 +46,7 @@ const FormStudent = () => {
                   birthdayDate,
                   healthGroup,
                   schoolClass,
-                  parent: {
+                  parents: {
                      mother: `${motherName} ${motherSurname}`,
                      father: `${fatherName} ${fatherSurname}`,
                   },
@@ -76,11 +76,13 @@ const FormStudent = () => {
                   type="text"
                   label="Name"
                   name="userName"
+                  color="blue"
                />
                <Input
                   type="text"
                   label="Surname"
                   name="userSurname"
+                  color="blue"
                />
                <label htmlFor="birthdayDate">
                   Birthday date

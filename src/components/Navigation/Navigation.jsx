@@ -27,7 +27,7 @@ const Navigation = () => {
       <>
          <Disclosure
             as="nav"
-            className="bg-gray-600"
+            className="bg-headerColor fixed w-full"
          >
             {({ open }) => (
                <>
