@@ -8,6 +8,7 @@ import {
    TabsHeader,
 } from '@material-tailwind/react';
 import FormStudent from '../../components/StudentRegister/StudentRegisterForm';
+import FormTeacher from '../../components/AdminRegister/AdminRegisterForm';
 
 
 const data = [
@@ -21,14 +22,14 @@ const data = [
       label: 'Teacher',
       value: 'teacher',
       desc: (
-         <div className="flex flex-col w-72 gap-6"></div>
+         <FormTeacher admin={"Teacher"} />
       ),
    },
    {
       label: 'Admin',
       value: 'admin',
       desc: (
-         <div className="flex flex-col w-72 gap-6"></div>
+         <FormTeacher admin={"Admin"} />
       ),
    },
 ];
