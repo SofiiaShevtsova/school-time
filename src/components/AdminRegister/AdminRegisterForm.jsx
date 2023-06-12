@@ -77,7 +77,7 @@ const FormTeacher = ({ admin }) => {
          >
             <div>
                <Typography
-                  variant="small"
+                  variant="meddium"
                   color="blue-gray"
                   className="mb-4 font-medium"
                >
@@ -147,17 +147,17 @@ const FormTeacher = ({ admin }) => {
                </select>
                <Typography
                   variant="small"
-                  color="blue-gray"
-                  className="mb-4 font-medium"
+                  color="green"
+                  className="my-1 font-medium"
                >
                   Subjects
                </Typography>
-               <List className="flex-row">
+               <List className="flex-wrap m-0 p-0">
                   {/* Буде використано мар та відобразиться згідно списком який прийде з бека */}
                   <ListItem className="p-0">
                      <label
                         htmlFor="horizontal-list-react"
-                        className="px-3 py-2 flex items-center w-full cursor-pointer"
+                        className="px-1 py-1 flex items-center cursor-pointer"
                      >
                         <ListItemPrefix className="mr-3">
                            <Checkbox
@@ -165,13 +165,14 @@ const FormTeacher = ({ admin }) => {
                               ripple={false}
                               className="checkbox"
                               value="History"
+                              color="green"
                               containerProps={{
                                  className: 'p-0',
                               }}
                            />
                         </ListItemPrefix>
                         <Typography
-                           color="blue-gray"
+                           color="green"
                            className="font-medium"
                         >
                            History
@@ -181,13 +182,14 @@ const FormTeacher = ({ admin }) => {
                   <ListItem className="p-0">
                      <label
                         htmlFor="horizontal-list-vue"
-                        className="px-3 py-2 flex items-center w-full cursor-pointer"
+                        className="px-1 py-1 flex items-center cursor-pointer"
                      >
                         <ListItemPrefix className="mr-3">
                            <Checkbox
                               id="horizontal-list-vue"
                               ripple={false}
                               value="Math"
+                              color="green"
                               className="checkbox"
                               containerProps={{
                                  className: 'p-0',
@@ -195,7 +197,7 @@ const FormTeacher = ({ admin }) => {
                            />
                         </ListItemPrefix>
                         <Typography
-                           color="blue-gray"
+                           color="green"
                            className="font-medium"
                         >
                            Math
@@ -205,12 +207,13 @@ const FormTeacher = ({ admin }) => {
                   <ListItem className="p-0">
                      <label
                         htmlFor="horizontal-list-svelte"
-                        className="px-3 py-2 flex items-center w-full cursor-pointer"
+                        className="px-1 py-1 flex items-center cursor-pointer"
                      >
                         <ListItemPrefix className="mr-3">
                            <Checkbox
                               id="horizontal-list-svelte"
                               ripple={false}
+                              color="green"
                               className="checkbox"
                               containerProps={{
                                  className: 'p-0',
@@ -218,7 +221,7 @@ const FormTeacher = ({ admin }) => {
                            />
                         </ListItemPrefix>
                         <Typography
-                           color="blue-gray"
+                           color="green"
                            className="font-medium"
                         >
                            Music
